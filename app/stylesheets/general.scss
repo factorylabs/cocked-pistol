@@ -1,0 +1,284 @@
+
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small;
+}
+
+select, input, textarea, button {
+  font: 99% sans-serif;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+ul, ol {
+  margin-left: 2em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong, th {
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+input:valid, textarea:valid {
+}
+
+input:invalid, textarea:invalid {
+   border-radius: 1px;
+   -moz-box-shadow: 0px 0px 5px $general_input_highlight;
+   -webkit-box-shadow: 0px 0px 5px $general_input_highlight;
+   box-shadow: 0px 0px 5px $general_input_highlight;
+}
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: $general_input_highlight;
+}
+
+::-moz-selection {
+  background: $general_selection_bg;
+  color: $general_selection_fg;
+  text-shadow: none;
+}
+
+::selection {
+  background: $general_selection_bg;
+  color: $general_selection_fg;
+  text-shadow: none;
+}
+
+a:link {
+  -webkit-tap-highlight-color: $general_link_tap;
+}
+
+button {
+  width: auto;
+  overflow: visible;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+body, select, input, textarea {
+  color: $general_color;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $general_background;
+}
+
+body {
+  background-color: $general_body_background;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+a, a:active, a:visited {
+  color: $general_link_active;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $general_link_hover;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $general_header_color;
+}
+
+h1 {
+  font-size: 153.9%;
+  line-height: 100%;
+}
+h2 {
+  font-size: 138.5%;
+  line-height: 100%;
+}
+h3 {
+  font-size: 123.1%;
+  line-height: 116%;
+}
+h4 {
+  font-size: 108%;
+  line-height: 108%;
+}
+h5 {
+  font-size: 93%;
+  line-height: 108%;
+}
+h6 {
+  font-size: 85%;
+  line-height: 116%;
+}
+
+h1 a, h1 a:active, h1 a:visited,
+h2 a, h2 a:active, h2 a:visited,
+h3 a, h3 a:active, h3 a:visited,
+h4 a, h4 a:active, h4 a:visited,
+h5 a, h5 a:active, h5 a:visited,
+h6 a, h6 a:active, h6 a:visited {
+  color: $general_header_color;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover {
+  color: $general_header_link_hover;
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid $general_hr;
+}
+
+ins, mark {
+  background-color: $general_body_background;
+  color: $general_color;
+}
+
+.accent {
+  color: $general_accent;
+}
+
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/* Debug and placeholder box */
+.sherpa-box {
+  background-color: $general_sherpa_bg;
+  text-align: $general_sherpa_align;
+  color: $general_sherpa_color;
+}
+

@@ -1,0 +1,6 @@
+# We want to add in things like helpers and ajax responses
+Evergreen.configure do |config|
+  config.public_dir = 'build'
+  # config.template_dir = 'templates'
+end
+

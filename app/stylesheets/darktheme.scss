@@ -1,0 +1,35 @@
+
+$fdl_primary_color: #E52253;
+
+// general.scss
+$general_color: #FFF;
+$general_background: #FFF;
+$general_body_background: #000;
+$general_link_active: #999;
+$general_link_hover: $fdl_primary_color;
+$general_link_tap: $fdl_primary_color;
+$general_header_color: #FFF;
+$general_header_link_hover: $fdl_primary_color;
+$general_accent: $fdl_primary_color;
+$general_blockquote: #FFF;
+$general_dt: #999;
+$general_hr: #999;
+$general_input_highlight: $fdl_primary_color;
+$general_selection_bg: $fdl_primary_color;
+$general_selection_fg: #CCC;
+
+$general_sherpa_bg: #555;
+$general_sherpa_align: center;
+$general_sherpa_color: #999;
+
+$corner-radius: 10px;
+
+
+$global_header_font: "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeue-CondensedBold", "Helvetica Neue", "Arial Narrow", "Arial-Narrow", "ArialNarrow", Helvetica, Arial, sans-serif;
+$global_header_font_weight: bold;
+$global_header_font_stretch: condensed;
+@mixin global_header_fonts {
+  font-family: $global_header_font;
+  font-weight: $global_header_font_weight;
+  font-stretch: $global_header_font_stretch;
+}
