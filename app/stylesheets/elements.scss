@@ -1,0 +1,56 @@
+
+#ticker {
+  .inner-box {
+    background-color: #000;
+    border: 5px solid #333;
+    height: 75px;
+    width: 1578px;
+  }
+
+  img {
+    float: left;
+    height: 65px;
+    width: 65px;
+    margin: 5px 10px 0 5px;
+  }
+
+  h2 {
+    margin: 5px;
+    font-size: 250%;
+    font-stretch: condensed;
+    font-weight: normal;
+  }
+  /* .sherpa-box{:style => "width:1588px; height:75px; line-height:75px;"} */
+}
+
+#status {
+  .title-bar {
+    background-color: #000;
+    border: 5px solid #333;
+    border-bottom: none;
+    height: 40px;
+    width: 514px;
+  }
+
+  .contents {
+    background-color: #000;
+    border: 5px solid #333;
+    height: 470px;
+    width: 514px;
+  }
+
+  h2 {
+    float: left;
+    margin: 10px;
+    font-size: 153.9%;
+    font-stretch: condensed;
+  }
+
+  img {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+  /* .sherpa-box{:style => "width:524px; height:525px; line-height:525px;"} */
+}
