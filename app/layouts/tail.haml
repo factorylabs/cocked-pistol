@@ -1,6 +1,6 @@
 
 -# Add concatenated minified javascripts
--# %script{:src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", :type => "text/javascript"}
--# :javascript
-  -# !window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.5.1.js"%3E%3C/script%3E'))
+%script{:src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", :type => "text/javascript"}
+:javascript
+  !window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery-1.5.1.min.js"%3E%3C/script%3E'))
 %script{:src => "/javascripts/base.js", :type => "text/javascript"}
