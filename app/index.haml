@@ -1,45 +1,109 @@
 
-.row
+#spacer.row
   .gutter-02
-.row{:id => "branding"}
+
+#branding.row
   .gutter-02
-    .col-12
-      .sherpa-box{:style => "width:1588px; height:43px; line-height:43px;"} Branding
-.row{:id => "ticker"}
+    .col-12.outer-container
+      .row
+        #fdl.col-06
+          %img{:src => '/images/factory-header.png', :alt => 'alt'}/
+        #projects.col-06
+          .dot
+          .dot
+          .dot.active
+          .dot
+          .dot
+          .dot
+
+#feeds.row
   .gutter-02
-    .col-12
-      .inner-box 
-        %img{:src => 'http://a1.twimg.com/profile_images/97754698/maiden-big.jpg', :alt => 'gravatar'}/
-        %h2 This is a one hundred and forty characters. It should stretch the entire width of this thing and when it's compacted it should change size..
-.row{:id => "status"}
+    #github.col-06.outer-container
+      .title-container
+        %img{:src => '/images/github.png', :alt => 'alt'}/
+        %h2 Repository Name
+      %ul
+        %li
+          Bug fix with markdown being stripped of whitespace
+          %br
+          %br
+          Vim's writefile on lists stripped all the whitespace out of documents so it didn't render properly. It now requires a Vim installation with Ruby support so we can use heredoc layouts and write clean html to a file.
+          %h3 Matthew Kitt :: 03-10-2011 10:52am
+        %li
+          Bug fix with markdown being stripped of whitespace
+          %h3 Anthony Navarre &amp; Don Petersen :: 03-10-2011 10:52am
+        %li
+          Bug fix with markdown being stripped of whitespace
+          %h3 Anthony Navarre &amp; Don Petersen :: 03-10-2011 10:52am
+        %li
+          Bug fix with markdown being stripped of whitespace
+          %h3 Anthony Navarre &amp; Don Petersen :: 03-10-2011 10:52am
+        %li
+          Bug fix with markdown being stripped of whitespace
+          %h3 Anthony Navarre &amp; Don Petersen :: 03-10-2011 10:52am
+
+    #tracker.col-06.outer-container
+      .title-container
+        %img{:src => '/images/tracker.png', :alt => 'alt'}/
+        %h2 Project Name
+      %ul
+        %li
+          Story: Page should have a link to download the test drive checklist
+          %h3 Jay Zeschin :: 03-10-2011 10:52am
+        %li
+          Story: Sorting only shows blogs
+          %h3 Scott Woodrow :: 03-10-2011 10:52am
+        %li
+          Comment: A7 Compare-Integrator template - "get some yo"
+          %h3 Meghan Newlin :: 03-10-2011 10:52am
+        %li
+          Story: Page should have a link to download the test drive checklist
+          %h3 Jay Zeschin :: 03-10-2011 10:52am
+        %li
+          Story: Sorting only shows blogs
+          %h3 Scott Woodrow :: 03-10-2011 10:52am
+        %li
+          Comment: A7 Compare-Integrator template - "get some yo"
+          %h3 Meghan Newlin :: 03-10-2011 10:52am
+
+#status.row
   .gutter-02
-    .col-04
-      .title-bar
-        %h2 GitHub
-        %img{:src => 'http://a1.twimg.com/profile_images/97754698/maiden-big.jpg', :alt => 'gravatar'}/
-      .contents
-    .col-04
-      .title-bar
-        %h2 RPM
-        %img{:src => 'http://a1.twimg.com/profile_images/97754698/maiden-big.jpg', :alt => 'gravatar'}/
-      .contents
-    .col-04
-      .title-bar
-        %h2 Pivotal Tracker
-        %img{:src => 'http://a1.twimg.com/profile_images/97754698/maiden-big.jpg', :alt => 'gravatar'}/
-      .contents
-.row
+    #client_logo.col-01.outer-container
+      %img{:src => '/images/tnf-logo.png', :alt => 'alt'}/
+    #graph.col-06.outer-container
+      .desc-container-title
+        %h3 Page Views Per Day
+      .desc-container-stat
+        raphael graph
+      .desc-container-measurement
+        %h3 dates...
+    #stats.col-02.outer-container
+      .desc-container-title
+        %h3 Analytics Stats
+      .desc-container-stat
+        %h3 214
+      .desc-container-measurement
+        %h3 uniques yesterday
+    #rpm.col-02.outer-container
+      .desc-container-title
+        %h3 RPM Throughput
+      .desc-container-stat
+        %h3 157
+      .desc-container-measurement
+        %h3 requests per minute
+    #ci.col-01.outer-container
+      .desc-container-title
+        %h3 CI Status
+      .desc-container-stat.passing
+      .desc-container-measurement
+        %h3 Passing...
+
+#ticker.row
   .gutter-02
-    .col-02
-      .sherpa-box{:style => "width:258px; height:225px; line-height:225px;"} Placeholder
-    .col-02
-      .sherpa-box{:style => "width:258px; height:225px; line-height:225px;"} Placeholder
-    .col-02
-      .sherpa-box{:style => "width:258px; height:225px; line-height:225px;"} Placeholder
-    .col-02
-      .sherpa-box{:style => "width:258px; height:225px; line-height:225px;"} Placeholder
-    .col-02
-      .sherpa-box{:style => "width:258px; height:225px; line-height:225px;"} Placeholder
-    .col-02
-      .sherpa-box{:style => "width:258px; height:225px; line-height:225px;"} Placeholder
+    .col-12.outer-container
+      .inner-container
+        %ul
+          %li
+            %img{:src => 'http://a1.twimg.com/profile_images/97754698/maiden-big.jpg', :alt => 'alt'}/
+            This is one hundred and forty characters, it should fit within this box and we don't want to see it wrap to a second line. Just cut it off..
 
